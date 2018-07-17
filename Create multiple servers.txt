@@ -1,0 +1,23 @@
+/////////////////////////////
+//Launch Servers/////////////
+/////////////////////////////
+pm2 start index.js -i 4 //pm2 start <name.js> -i <numProcess>
+
+//Restart servers in case they die
+pm2 restart all
+
+//Need more processes
+pm2 scale index +4 //pm2 scale <app name> +<n>
+
+//Reload workes(in case to need to update them)
+pm2 reload index.js
+
+//Check the current active program pm2 is running
+pm2 list
+
+/////////////////////////////
+Check Server Status whit UI//
+/////////////////////////////
+Access https://app.keymetrics.io/
+Do login
+Write the npm link provided in the site

@@ -1,0 +1,5 @@
+pm2 start <NAME>(Example: pm2 start verdaccio)
+
+--Check what to kill
+ps -ef
+kill -15 <PID> (kill daemon)
